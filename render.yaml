@@ -3,5 +3,5 @@ services:
     name: madvision-demo
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app2.py --server.port $PORT --server.address 0.0.0.0
+    startCommand: /opt/render/.local/bin/streamlit run app2.py --server.port $PORT --server.address 0.0.0.0
     autoDeploy: true
