@@ -66,7 +66,7 @@ def upload_file_to_bucket(bucket_name, file_path):
     """Upload a file to a Supabase bucket and return its URL."""
     filename = os.path.basename(file_path)
     with open(file_path, "rb") as file:
-        response = supabase.storage.from_(bucket_name).upload(filename, file)
+        response = supabase.storage.from(bucket_name).upload(filename, file)
         if response.status_code == 200:
             logging.info(f"Uploaded {filename} to {bucket_name}.")
             return True  # Return True if upload is successful
