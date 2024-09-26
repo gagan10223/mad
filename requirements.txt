@@ -6,7 +6,7 @@ torch
 moviepy
 opencv-python
 psutil
-supabase==0.3.0
+supabase==2.7.0
 yt-dlp
 numpy
 aiohttp
