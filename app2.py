@@ -28,10 +28,12 @@ os.makedirs(videos_output, exist_ok=True)  # Create directory if it doesn't exis
 os.makedirs(video_clips_output, exist_ok=True)  # Create clips directory
 
 # yt-dlp options
+
 ydl_opts = {
     'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
     'outtmpl': os.path.join(videos_output, '%(id)s.%(ext)s'),
     'noplaylist': True,
+    'cookiefile': 'madd.txt',  # Add this line to specify the cookies file
 }
 
 # Load Whisper model
