@@ -12,10 +12,8 @@ import whisper  # Add whisper import
 load_dotenv()
 
 # Replace with your Supabase URL and API key
-SUPABASE_URL = "https://hbnageqkqgvpxyftbjvy.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhibmFnZXFrcWd2cHh5ZnRianZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjcyNTM2NzcsImV4cCI6MjA0MjgyOTY3N30._OvBbm96lWN7QMqV3ianCcgmNHjUbMhj0XkZGzduCTM"
-
-# Create Supabase client
+SUPABASE_URL = ""
+SUPABASE_KEY = ""
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # Set up logging
